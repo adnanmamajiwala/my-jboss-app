@@ -60,10 +60,17 @@
                     <executable>true</executable>
                     <addResources>true</addResources>
                     <additionalProperties>
-                        <my-custom-propertyh>ThisIsAwesome!</my-custom-propertyh>
+                        <my-custom-property>Check-Me-Out!</my-custom-property>
                         <git-branch>@GIT_BRANCH@</git-branch>
                     </additionalProperties>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
